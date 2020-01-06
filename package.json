@@ -5,11 +5,15 @@
   "scripts": {
     "dev": "sapper dev",
     "build": "ls && sapper build",
+    "deploy:test": "now -A now.test.json",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run"
+  },
+  "engines": {
+    "node": "12.x"
   },
   "dependencies": {
     "compression": "^1.7.1",

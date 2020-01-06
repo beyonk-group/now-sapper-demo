@@ -26,6 +26,14 @@ and deploy it to now:
 npx now
 ```
 
+## Testing changes
+
+You can deploy using a git repository as the builder. Have a look at `now.test.json`.
+
+```bash
+npm run deploy:test
+```
+
 ## Local Usage (Now Dev)
 
 At the current time, Zeit's `now dev` emulator lags significantly behind the real service, and as such, the `now-sapper` module will not work locally. You will encounter the following error:
